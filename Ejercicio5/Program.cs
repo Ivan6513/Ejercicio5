@@ -8,4 +8,30 @@
 7) Si la respuesta no es ni "S" ni "N" que tambien finalice el programa, pero mostrando un mensaje que diga "Opcion no valida".
  */
 
-Console.ReadLine();
+
+string opcion;
+
+do
+{
+    Console.Clear();
+
+    Console.WriteLine("Ingrese su nombre: ");
+    string nombrePersona = Console.ReadLine();
+
+    Console.WriteLine($"Hola {nombrePersona}");
+
+    Console.WriteLine("¿Desea continuar? S para si, N para no");
+    opcion = Console.ReadLine();
+
+} while (opcion.ToUpper() == "S");
+
+if (opcion == "N")
+{
+    Console.Write("Programa finalizado correctamente");
+}
+else
+{
+    Console.WriteLine("Opcion no valida");
+}
+
+
