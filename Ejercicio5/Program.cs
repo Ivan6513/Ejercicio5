@@ -25,7 +25,7 @@ do
 
 } while (opcion.ToUpper() == "S");
 
-if (opcion == "N")
+if (opcion.ToUpper() == "N")
 {
     Console.Write("Programa finalizado correctamente");
 }
